@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="tests  Man and Woman">
+
+    <test name="Woman/Woman get/set tests">
+        <classes>
+            <class name="com.Person.Woman">
+                <methods>
+                    <include name="testGetWrongFirstName"/>
+                    <include name="testIsRetire"/>
+                    <include name="testGetSetWomanPartner"/>
+                    <include name="testLastNameAfterRegisterPartnership"/>
+                    <include name="testLastNameAfterDeRegisterPartnership"/>
+                </methods>
+            </class>
+            <class name="com.Person.Man">
+                <methods>
+                    <include name="testGetSetLastName"/>
+                    <include name="testGetSetFirstName"/>
+                    <include name="testGetSetAge"/>
+                    <include name="testIsRetire"/>
+                    <include name="testGetSetPartner"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
